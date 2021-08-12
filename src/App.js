@@ -43,10 +43,13 @@ class App extends Component {
 render() {
   return (
    <div>
+   <div className= "buttons"> 
    <button onClick={this.randomContact}> Add Random Contact</button>
    <button onClick={this.nameSort}>Sort By Name</button>
    <button onClick={this.popularitySort}>Sort By Popularity</button>
-     <table className ="table-style">
+   </div>
+   <div className="table">
+     <table>
        
          <tr className="row">
            <th>Picture</th>
@@ -67,6 +70,7 @@ render() {
            })}
          
      </table>
+     </div>
    </div>
   )}};
 
